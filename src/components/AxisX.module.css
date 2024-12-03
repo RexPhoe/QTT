@@ -4,9 +4,24 @@
     text-align: center;
     background-color: #1e1e1e;
     color: #fff;
+    margin-bottom: 10px;
+    overflow-x: auto;
   }
   
   .place {
+    width: 200px; /* Ancho fijo */
     font-weight: bold;
+    font-size: 2em;
     padding: 5px 0;
+    text-align: center;
+    align-content: center;
+    /* white-space: nowrap; /* Evita dividir el texto en varias líneas */
+    overflow: hidden; /* Evita contenido desbordado */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+  }
+  
+  .emptyCell {
+    width: 20px; /* Ancho fijo, igual que las celdas del eje Y */
+    height: auto;
+    background-color: transparent; /* Celda vacía con fondo transparente */
   }

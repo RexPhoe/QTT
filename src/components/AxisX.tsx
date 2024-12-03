@@ -12,9 +12,10 @@ const AxisX: React.FC<AxisXProps> = ({ places }) => {
     <div
       className={styles.axisX}
       style={{
-        gridTemplateColumns: `repeat(${places.length}, 1fr)` // Usar la longitud de los lugares para alinear las columnas
+        gridTemplateColumns: `200px repeat(${places.length}, 200px)` // La primera columna es del mismo ancho que las celdas del eje Y
       }}
     >
+      <div className={styles.emptyCell}></div> {/* Celda vacía inicial */}
       {places.map((place) => (
         <div key={place} className={styles.place}>
           {place}

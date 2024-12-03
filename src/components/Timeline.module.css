@@ -1,21 +1,22 @@
 .timelineContainer {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 20px;
-    overflow: auto; /* Agrega barra de desplazamiento si el contenido desborda */
+    align-items: flex-start; /* Alinea todo el contenido al inicio */
+    margin: 20px auto; /* Centrado verticalmente con márgenes */
+    overflow-x: auto; /* Habilita barra de desplazamiento horizontal */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
   }
   
   .gridContainer {
     display: flex;
-    width: 100%;
-    overflow: auto; /* Agrega barra de desplazamiento horizontal */
+    overflow-x: auto; /* Barra de desplazamiento horizontal */
+    margin: 0 auto; /* Centrado horizontal */
   }
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px); /* Ancho fijo para celdas */
-    grid-template-rows: repeat(auto-fit, 350px); /* Altura fija para celdas */
+    grid-template-columns: 200px repeat(auto-fit, 200px); /* La primera columna tiene el ancho de las celdas del eje Y */
+    grid-template-rows: repeat(auto-fit, 350px); /* Altura fija para las filas */
     gap: 10px;
   }
   
@@ -24,19 +25,31 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #333;
-    padding: 10px;
+    /*padding: 10px;*/
     background-color: #121212;
     color: #fff;
     width: 200px; /* Ancho fijo */
     height: 350px; /* Altura fija */
-    overflow: hidden; /* Evita desbordamientos de contenido */
+    overflow: hidden; /* Evita desbordamiento de contenido */
   }
   
   .axisX {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px); /* Coincide con el ancho de las columnas */
+    grid-template-columns: repeat(auto-fit, 200px); /* Ancho fijo igual al de las celdas */
     gap: 10px;
     text-align: center;
     background-color: #1e1e1e;
     color: #fff;
+    margin-bottom: 10px; /* Separación del tablero */
+    overflow-x: auto; /* Barra de desplazamiento horizontal */
+  }
+  
+  .place {
+    width: 200px; /* Ancho fijo */
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Evita desbordamiento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
   }

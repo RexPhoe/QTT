@@ -81,7 +81,6 @@ const Timeline: React.FC = () => {
                                             title={event.title}
                                             description={event.description}
                                             imageUrl={event.image_url}
-                                            location={event.location}
                                         />
                                     ))}
                                 </div>
