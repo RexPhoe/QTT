@@ -1,0 +1,12 @@
+.axisX {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  .place {
+    font-weight: bold;
+    padding: 5px 0;
+  }

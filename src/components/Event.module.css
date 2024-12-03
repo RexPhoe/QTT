@@ -1,0 +1,38 @@
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px; /* Ancho fijo */
+    height: 350px; /* Altura aumentada */
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Evita desbordamiento */
+  }
+  
+  .image {
+    width: 100%;
+    height: 150px; /* Tamaño fijo para imagen */
+    object-fit: cover; /* Ajusta imagen al espacio */
+    border-radius: 4px;
+  }
+  
+  .details {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em; /* Tamaño reducido del texto */
+    overflow: hidden;
+  }
+  
+  h2 {
+    margin: 5px 0;
+    font-size: 1em; /* Reducir el tamaño del título */
+  }
+  
+  p {
+    overflow-wrap: break-word; /* Evita palabras largas */
+    text-align: left; /* Ajusta alineación para legibilidad */
+  }

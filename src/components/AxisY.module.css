@@ -1,0 +1,13 @@
+.axisY {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 350px); /* Coincide con la altura de las filas */
+    gap: 10px;
+    text-align: right;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  .year {
+    font-weight: bold;
+    padding: 5px;
+  }

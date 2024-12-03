@@ -1,0 +1,42 @@
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+    overflow: auto; /* Agrega barra de desplazamiento si el contenido desborda */
+  }
+  
+  .gridContainer {
+    display: flex;
+    width: 100%;
+    overflow: auto; /* Agrega barra de desplazamiento horizontal */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px); /* Ancho fijo para celdas */
+    grid-template-rows: repeat(auto-fit, 350px); /* Altura fija para celdas */
+    gap: 10px;
+  }
+  
+  .gridCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #121212;
+    color: #fff;
+    width: 200px; /* Ancho fijo */
+    height: 350px; /* Altura fija */
+    overflow: hidden; /* Evita desbordamientos de contenido */
+  }
+  
+  .axisX {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px); /* Coincide con el ancho de las columnas */
+    gap: 10px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
