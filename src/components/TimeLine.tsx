@@ -11,6 +11,7 @@ interface EventData {
     description: string;
     image_url: string;
     location: string;
+    characters: [];
 }
 
 const Timeline: React.FC = () => {
@@ -74,15 +75,28 @@ const Timeline: React.FC = () => {
                                     key={`cell-${yearIndex}-${locationIndex}`} // Clave única con fila y columna
                                     className={styles.gridCell}
                                 >
-                                    {filteredEvents.map((event) => (
+                                    {/* Mostrar los primeros 3 eventos */}
+                                    {filteredEvents.slice(0, 3).map((event, eventIndex) => (
                                         <Event
-                                            key={`event-${event.id}-${yearIndex}-${locationIndex}`} // Clave única con ID, fila y columna
+                                            key={`event-${event.id}-${yearIndex}-${locationIndex}-${eventIndex}`} // Clave única con ID y posición
+                                            cellId={`cell-${yearIndex}-${locationIndex}`} // Identificador único de celda
                                             date={event.date}
                                             title={event.title}
                                             description={event.description}
                                             imageUrl={event.image_url}
+                                            characters={event.characters}
+                                            zIndex={eventIndex + 1} // Incrementamos el índice Z
+                                            horizontalOffset={eventIndex * 10} // Desplazamiento horizontal
+                                            verticalOffset={eventIndex * 20} // Desplazamiento vertical para mostrar los títulos
                                         />
                                     ))}
+
+                                    {/* Mostrar el globo si hay eventos adicionales */}
+                                    {filteredEvents.length > 3 && (
+                                        <div className={styles.extraEvents}>
+                                            +{filteredEvents.length - 3}
+                                        </div>
+                                    )}
                                 </div>
                             );
                         })

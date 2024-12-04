@@ -1,11 +1,12 @@
 .timelineContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea todo el contenido al inicio */
-    margin: 20px auto; /* Centrado verticalmente con márgenes */
-    overflow-x: auto; /* Habilita barra de desplazamiento horizontal */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px auto;
+  overflow-x: auto;
+  width: 100%;
+  position: relative; /* Garantiza contexto para la cuadrícula */
+}
   
   .gridContainer {
     display: flex;
@@ -15,9 +16,9 @@
   
   .grid {
     display: grid;
-    grid-template-columns: 200px repeat(auto-fit, 200px); /* La primera columna tiene el ancho de las celdas del eje Y */
-    grid-template-rows: repeat(auto-fit, 350px); /* Altura fija para las filas */
-    gap: 10px;
+    grid-template-columns: 200px repeat(auto-fit, 200px);
+    grid-template-rows: repeat(auto-fit, 350px);
+    gap: 30px; /* Aumenta el espacio entre columnas y filas */
   }
   
   .gridCell {
@@ -25,18 +26,18 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #333;
-    /*padding: 10px;*/
     background-color: #121212;
     color: #fff;
     width: 200px; /* Ancho fijo */
     height: 350px; /* Altura fija */
     overflow: hidden; /* Evita desbordamiento de contenido */
+    position: relative; /* Define el contexto para posicionamiento absoluto */
   }
   
   .axisX {
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px); /* Ancho fijo igual al de las celdas */
-    gap: 10px;
+    gap: 30px;
     text-align: center;
     background-color: #1e1e1e;
     color: #fff;
@@ -52,4 +53,22 @@
     white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
     overflow: hidden; /* Evita desbordamiento */
     text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+  }
+
+  .extraEvents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d40a0a;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #fff;
+    position: absolute; /* Asegura que se posicione dentro de la celda */
+    right: 10px; /* Ajuste horizontal */
+    bottom: 10px; /* Ajuste vertical */
+    z-index: 5; /* Se asegura de estar visible sobre los eventos */
   }
