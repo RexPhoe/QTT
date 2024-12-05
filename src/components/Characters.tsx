@@ -1,26 +1,19 @@
 import React from 'react';
+import { useCharacters } from './hooks/useCharacters';
 import styles from './Characters.module.css';
-
-interface Character {
-  id: number;
-  name: string;
-  image_url: string;
-}
+import { Character } from '../types';
 
 interface CharactersProps {
   characters: Character[];
-  cellId: string; // Identificador único de celda
+  cellId: string;
 }
 
 const Characters: React.FC<CharactersProps> = ({ characters, cellId }) => {
-  if (!characters || characters.length === 0) {
+  const { visibleCharacters, extraCount } = useCharacters({ characters, cellId });
+
+  if (!visibleCharacters || visibleCharacters.length === 0) {
     return null; // No mostrar nada si no hay personajes
   }
-
-  // Mostrar un máximo de 4 personajes
-  const maxVisible = 4;
-  const visibleCharacters = characters.slice(0, maxVisible);
-  const extraCount = characters.length - maxVisible;
 
   return (
     <div className={styles.charactersContainer}>

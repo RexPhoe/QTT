@@ -7,20 +7,90 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-node_modules/
-dist/
+
+# Temporary files and backups
+*.tmp
+*.temp
+*.bak
+*.swp
+*.lock
+*.cache
+*.pid
+*.seed
+*.log
+
+# Test coverage
+coverage/
+
+# Output directories for bundlers and static builds
+.next/
+.nuxt/
+.svelte-kit/
+public/
+static/
+
+# Git files
+.git/
+.gitignore
+
+# System files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Generated files
+*.gz
+*.zip
+*.tar
+*.tgz
+*.rar
+
+# IDE/Editor specific files
+*.iml
+*.ipr
+*.iws
+*.log
+
+# Specific to MacOS
+.AppleDouble
+.LSOverride
+
+# Specific to Linux
+*~ 
+.trash
+
+# Additional
+*.sqlite3 # SQLite database files
+*.db      # Generic database files
+*.key     # Keys and credentials
+*.crt     # Certificates
+*.pem     # Private keys
+*.cert    # Certificates
+*.pfx     # PKCS12 certificates
+
+# Miscellaneous
+yarn-error.log
+npm-debug.log
+pnpm-debug.log

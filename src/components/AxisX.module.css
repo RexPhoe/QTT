@@ -1,27 +1,35 @@
-.axisX {
-    display: grid;
-    gap: 30px;
-    text-align: center;
-    background-color: #1e1e1e;
-    color: #fff;
-    margin-bottom: 10px;
-    overflow-x: auto;
-  }
-  
-  .place {
-    width: 200px; /* Ancho fijo */
-    font-weight: bold;
-    font-size: 2em;
-    padding: 5px 0;
-    text-align: center;
-    align-content: center;
-    /* white-space: nowrap; /* Evita dividir el texto en varias líneas */
-    overflow: hidden; /* Evita contenido desbordado */
-    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
-  }
-  
-  .emptyCell {
-    width: 20px; /* Ancho fijo, igual que las celdas del eje Y */
-    height: auto;
-    background-color: transparent; /* Celda vacía con fondo transparente */
-  }
+.axisXContainer {
+  transform: translateX(210px); /* Alinea con la cuadrícula */
+  margin-bottom: 10px;
+  width: calc(100% - 210px); /* Ajusta el ancho para evitar desbordamientos */
+}
+
+.groupRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.groupCell {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #1e1e1e;
+}
+
+.placeRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 30px; /* Alineación exacta con la cuadrícula de eventos */
+}
+
+.placeCell {
+  text-align: center;
+  font-size: 1em;
+  background-color: #2e2e2e;
+  color: #fff;
+  padding: 5px 0;
+  border: 1px solid #333;
+}

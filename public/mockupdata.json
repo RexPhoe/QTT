@@ -5,7 +5,12 @@
     "title": "Invasion of Poland",
     "description": "Germany invades Poland, marking the beginning of World War II.",
     "image_url": "https://www.laaventuradelahistoria.es/wp-content/uploads/2022/02/apert-invasion.jpg",
-    "location": "Poland",
+    "location": {
+      "id": "poland",
+      "name": "Poland",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": [
       {
         "id": 1,
@@ -20,7 +25,12 @@
     "title": "Battle of France",
     "description": "Germany launches an offensive against France and the Low Countries.",
     "image_url": "https://www.rafmuseum.org.uk/images/online_exhibitions/Signal-blitzkriegLG.jpg",
-    "location": "France",
+    "location": {
+      "id": "france",
+      "name": "France",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": [
       {
         "id": 2,
@@ -28,7 +38,7 @@
         "image_url": "https://cdn.britannica.com/73/11573-050-70EF5631/Charles-de-Gaulle-1967.jpg"
       },
       {
-        "id":3,
+        "id": 3,
         "name": "Winston Churchill",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/220px-Sir_Winston_Churchill_-_19086236948.jpg"
       }
@@ -40,7 +50,12 @@
     "title": "Battle of Britain",
     "description": "The German Luftwaffe begins an air campaign against the United Kingdom.",
     "image_url": "https://www.rafmuseum.org.uk/images/online_exhibitions/Signal-blitzkriegLG.jpg",
-    "location": "United Kingdom",
+    "location": {
+      "id": "uk",
+      "name": "United Kingdom",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": [
       {
         "id": 1,
@@ -63,7 +78,7 @@
         "image_url": "https://cdn.britannica.com/73/11573-050-70EF5631/Charles-de-Gaulle-1967.jpg"
       },
       {
-        "id":3,
+        "id": 3,
         "name": "Winston Churchill",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/220px-Sir_Winston_Churchill_-_19086236948.jpg"
       }
@@ -75,7 +90,12 @@
     "title": "Operation Barbarossa",
     "description": "Nazi Germany invades the Soviet Union.",
     "image_url": "https://cdn.britannica.com/01/150101-004-995721DE/soldiers-German-part-Soviet-Union-Operation-Barbarossa-1941.jpg",
-    "location": "Soviet Union",
+    "location": {
+      "id": "urss",
+      "name": "Soviet Union",
+      "group_id": "eurasia",
+      "group_name": "Eurasia"
+    },
     "characters": []
   },
   {
@@ -84,7 +104,12 @@
     "title": "Attack on Pearl Harbor",
     "description": "Japan attacks the U.S. naval base at Pearl Harbor, leading to the U.S. entering the war.",
     "image_url": "https://api.army.mil/e2/c/images/2017/01/04/461793/max1200.jpg",
-    "location": "United States",
+    "location": {
+      "id": "eeuu",
+      "name": "United States",
+      "group_id": "america",
+      "group_name": "America"
+    },
     "characters": [
       {
         "id": 4,
@@ -104,7 +129,12 @@
     "title": "Battle of Midway",
     "description": "A decisive naval battle in the Pacific Theater resulting in a significant Allied victory.",
     "image_url": "https://www.nationalww2museum.org/sites/default/files/styles/wide_medium/public/2017-06/battle_of_midway-002.jpg?h=9f3afbb3",
-    "location": "Pacific Ocean",
+    "location": {
+      "id": "pacific",
+      "name": "Pacific Ocean",
+      "group_id": "ocean",
+      "group_name": "Ocean"
+    },
     "characters": []
   },
   {
@@ -113,7 +143,12 @@
     "title": "Battle of Stalingrad",
     "description": "One of the deadliest battles in history, marking a turning point on the Eastern Front.",
     "image_url": "https://cdn.britannica.com/54/199954-004-7505E3A1/soldiers-Soviet-offensive-troops-German-Battle-of-February-1943.jpg?s=1500x700&q=85",
-    "location": "Soviet Union",
+    "location": {
+      "id": "urss",
+      "name": "Soviet Union",
+      "group_id": "eurasia",
+      "group_name": "Eurasia"
+    },
     "characters": []
   },
   {
@@ -122,7 +157,12 @@
     "title": "Operation Torch",
     "description": "Allied forces land in North Africa to begin a campaign against Axis powers.",
     "image_url": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/20171111_USP507.jpg",
-    "location": "North Africa",
+    "location": {
+      "id": "africa",
+      "name": "North Africa",
+      "group_id": "africa",
+      "group_name": "Africa"
+    },
     "characters": []
   },
   {
@@ -131,7 +171,12 @@
     "title": "Battle of Kursk",
     "description": "The largest tank battle in history, resulting in a Soviet victory.",
     "image_url": "https://assets.editorial.aetnd.com/uploads/2009/10/gettyimages-538297253.jpg",
-    "location": "Soviet Union",
+    "location": {
+      "id": "urss",
+      "name": "Soviet Union",
+      "group_id": "eurasia",
+      "group_name": "Eurasia"
+    },
     "characters": []
   },
   {
@@ -140,7 +185,12 @@
     "title": "Allied Invasion of Italy",
     "description": "Allied forces land on the Italian mainland, leading to Italy's surrender.",
     "image_url": "https://www.nam.ac.uk/sites/default/files/styles/slice_lg/public/2019-02/82353_slice.jpg.webp?itok=kJzWvwTo",
-    "location": "Italy",
+    "location": {
+      "id": "italy",
+      "name": "Italy",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": []
   },
   {
@@ -149,7 +199,12 @@
     "title": "D-Day: Normandy Landings",
     "description": "Allied forces land on the beaches of Normandy, France, initiating the liberation of Western Europe.",
     "image_url": "https://encyclopedia.ushmm.org/images/large/b3a43994-8230-4211-ab2e-c67ac4a336a8.jpg",
-    "location": "France",
+    "location": {
+      "id": "france",
+      "name": "France",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": [
       {
         "id": 6,
@@ -163,7 +218,12 @@
     "title": "Liberation of Paris",
     "description": "Allied forces liberate Paris from German occupation.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/57cf18ae6b8f5ba693497e1a/1564153358527-59HUVW26PNEFNPK9GYBE/AP_LEAD4408291559.jpg?format=2500w",
-    "location": "France",
+    "location": {
+      "id": "france",
+      "name": "France",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": []
   },
   {
@@ -172,7 +232,12 @@
     "title": "Battle of the Bulge",
     "description": "Germany's final major offensive on the Western Front, ultimately repelled by Allied forces.",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9rZtIFjyrn9UQctGK366HbUUyr3X1Yup7Q&s",
-    "location": "Belgium",
+    "location": {
+      "id": "belgium",
+      "name": "Belgium",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": []
   },
   {
@@ -181,7 +246,12 @@
     "title": "Battle of Iwo Jima",
     "description": "A major battle in which U.S. forces captured the island of Iwo Jima from Japan.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Raising_the_Flag_on_Iwo_Jima%2C_larger_-_edit1.jpg",
-    "location": "Japan",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
     "characters": []
   },
   {
@@ -190,7 +260,12 @@
     "title": "Hitler's Death",
     "description": "Adolf Hitler commits suicide in his bunker in Berlin.",
     "image_url": "https://www.trumanlibraryinstitute.org/wp-content/uploads/2015/04/4.30.45-The-Death-of-Adolf-Hitler.png",
-    "location": "Germany",
+    "location": {
+      "id": "germany",
+      "name": "Germany",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": []
   },
   {
@@ -199,7 +274,12 @@
     "title": "Germany's Unconditional Surrender",
     "description": "Germany signs an unconditional surrender, ending the war in Europe.",
     "image_url": "https://static.politico.com/ac/3e/1de3799d4f45b5bd23204f23b096/webp.net-resizeimage%20(7).jpg",
-    "location": "Germany",
+    "location": {
+      "id": "germany",
+      "name": "Germany",
+      "group_id": "europe",
+      "group_name": "Europe"
+    },
     "characters": [
       {
         "id": 1,
@@ -222,7 +302,7 @@
         "image_url": "https://cdn.britannica.com/73/11573-050-70EF5631/Charles-de-Gaulle-1967.jpg"
       },
       {
-        "id":3,
+        "id": 3,
         "name": "Winston Churchill",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/220px-Sir_Winston_Churchill_-_19086236948.jpg"
       }
@@ -234,16 +314,12 @@
     "title": "Atomic Bombing of Hiroshima",
     "description": "The U.S. drops an atomic bomb on Hiroshima, Japan.",
     "image_url": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Fcultura%2Fimagenes%2F2015%2F08%2F04%2Ftelevision%2F1438694685_333447_1438712336_noticia_fotograma.png?auth=46afb6fc95049a24157db5f39a13d8c642cb4168102bb0fbdbef712f031d4565&width=1200&height=675&smart=true",
-    "location": "Japan",
-    "characters": []
-  },
-  {
-    "id": 16,
-    "date": "1945-12-16",
-    "title": "Battle of the Bulge",
-    "description": "Germany's final major offensive on the Western Front, ultimately repelled by Allied forces.",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9rZtIFjyrn9UQctGK366HbUUyr3X1Yup7Q&s",
-    "location": "Belgium",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
     "characters": []
   },
   {
@@ -252,52 +328,13 @@
     "title": "Battle of Iwo Jima",
     "description": "A major battle in which U.S. forces captured the island of Iwo Jima from Japan.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Raising_the_Flag_on_Iwo_Jima%2C_larger_-_edit1.jpg",
-    "location": "Belgium",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
     "characters": []
-  },
-  {
-    "id": 18,
-    "date": "1945-04-30",
-    "title": "Hitler's Death",
-    "description": "Adolf Hitler commits suicide in his bunker in Berlin.",
-    "image_url": "https://www.trumanlibraryinstitute.org/wp-content/uploads/2015/04/4.30.45-The-Death-of-Adolf-Hitler.png",
-    "location": "Belgium",
-    "characters": []
-  },
-  {
-    "id": 19,
-    "date": "1945-05-07",
-    "title": "Germany's Unconditional Surrender",
-    "description": "Germany signs an unconditional surrender, ending the war in Europe.",
-    "image_url": "https://static.politico.com/ac/3e/1de3799d4f45b5bd23204f23b096/webp.net-resizeimage%20(7).jpg",
-    "location": "Belgium",
-    "characters": [
-      {
-        "id": 1,
-        "name": "Adolf Hitler",
-        "image_url": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTSwY6Ku-JYlsU1drkpqORjc7_WWLi2xLTUfqJyjp-YC6oIGP-_yHPFiDRbLbIuggtiTmWtwfymbRrZPjI"
-      },
-      {
-        "id": 4,
-        "name": "Franklin D. Roosevelt",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roosevelt20.jpg/800px-Roosevelt20.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Isoroku Yamamoto",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Portrait_of_Yamamoto_Isoroku.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Charles de Gaulle",
-        "image_url": "https://cdn.britannica.com/73/11573-050-70EF5631/Charles-de-Gaulle-1967.jpg"
-      },
-      {
-        "id":3,
-        "name": "Winston Churchill",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/220px-Sir_Winston_Churchill_-_19086236948.jpg"
-      }
-    ]
   },
   {
     "id": 20,
@@ -305,7 +342,40 @@
     "title": "Atomic Bombing of Hiroshima",
     "description": "The U.S. drops an atomic bomb on Hiroshima, Japan.",
     "image_url": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Fcultura%2Fimagenes%2F2015%2F08%2F04%2Ftelevision%2F1438694685_333447_1438712336_noticia_fotograma.png?auth=46afb6fc95049a24157db5f39a13d8c642cb4168102bb0fbdbef712f031d4565&width=1200&height=675&smart=true",
-    "location": "Belgium",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
+    "characters": []
+  },
+  {
+    "id": 20,
+    "date": "1945-08-06",
+    "title": "Atomic Bombing of Hiroshima",
+    "description": "The U.S. drops an atomic bomb on Hiroshima, Japan.",
+    "image_url": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Fcultura%2Fimagenes%2F2015%2F08%2F04%2Ftelevision%2F1438694685_333447_1438712336_noticia_fotograma.png?auth=46afb6fc95049a24157db5f39a13d8c642cb4168102bb0fbdbef712f031d4565&width=1200&height=675&smart=true",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
+    "characters": []
+  },
+  {
+    "id": 20,
+    "date": "1945-08-06",
+    "title": "Atomic Bombing of Hiroshima",
+    "description": "The U.S. drops an atomic bomb on Hiroshima, Japan.",
+    "image_url": "https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Fcultura%2Fimagenes%2F2015%2F08%2F04%2Ftelevision%2F1438694685_333447_1438712336_noticia_fotograma.png?auth=46afb6fc95049a24157db5f39a13d8c642cb4168102bb0fbdbef712f031d4565&width=1200&height=675&smart=true",
+    "location": {
+      "id": "japan",
+      "name": "Japan",
+      "group_id": "asia",
+      "group_name": "Asia"
+    },
     "characters": []
   }
 ]

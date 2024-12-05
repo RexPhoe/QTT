@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+Timeline Visualization App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+The Timeline Visualization App is designed to organize and present content, particularly related to timelines, events, and characters, in a visually appealing and intuitive manner. The application leverages a two-axis structure to provide a clear and immediate understanding of complex historical, fictional, or thematic scenarios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features
 
-## Expanding the ESLint configuration
+Horizontal Axis (Places/Regions): Represents geographical locations or regions relevant to the timeline.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Vertical Axis (Dates): Represents the chronological distribution of events.
 
-- Configure the top-level `parserOptions` property like this:
+Matrix of Events: Events are placed at the intersection of the two axes, creating an organized and visually comprehensible matrix.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Character Exploration: Additional sections allow users to explore relationships and lineages of characters associated with the timeline.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Objectives
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Provide a visual representation of events and their relationships to time and place.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Simplify the understanding of complex historical or fictional narratives.
+
+Offer flexible navigation and exploration of data, enabling users to delve into characters, locations, and key events.
+
+Applications
+
+This app is intended to explain and visualize elements from vast areas and periods, whether real or fictional. Examples include:
+
+Historical events, such as World War II.
+
+Fictional timelines, such as the events of Game of Thrones. - (TO DO) -
+
+By organizing and displaying content in a structured matrix and offering additional perspectives on relationships and characters, the Timeline Visualization App aims to make storytelling and historical narratives accessible, engaging, and educational.
